@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- UIkit CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+
+     <!-- UIkit JS -->
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+         
+    <title>card justify</title>
+   
+    <style>
+        .uk-navbar-nav>li>a {
+    color: rgb(255, 255, 255);}
+
+    .bottom{
+        justify-content: center;
+       
+    }
+    .small{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media (max-width:769px) {
+        .sight{
+            display: none;
+        }
+        
+    }
+    .cs-color{
+        font-family: "SFProDisplay";
+    font-weight: 600;
+    font-size: 37px;
+    color: #131212;
+    }
+    .as-color{
+        color: #86868b;
+        font-size: 20px;
+    font-family: "SFProDisplay";
+    font-weight: 600;
+    }
+    .uk-subnav>*>:first-child {
+   
+    font-size: 17px;
+  
+}
+.justify{
+    justify-content: center;
+    
+}
+.pad{
+    padding:0px;
+}
+.uk-card-primary.uk-card-body .uk-slidenav, .uk-card-primary>:not([class*=uk-card-media]) .uk-slidenav, .uk-card-secondary.uk-card-body .uk-slidenav, .uk-card-secondary>:not([class*=uk-card-media]) .uk-slidenav, .uk-light .uk-slidenav, .uk-offcanvas-bar .uk-slidenav, .uk-overlay-primary .uk-slidenav, .uk-section-primary:not(.uk-preserve-color) .uk-slidenav, .uk-section-secondary:not(.uk-preserve-color) .uk-slidenav, .uk-tile-primary:not(.uk-preserve-color) .uk-slidenav, .uk-tile-secondary:not(.uk-preserve-color) .uk-slidenav {
+    color: rgb(0 0 0 / 70%);
+}
+.cs-bg{
+    background-color: rgb(22, 154, 236);
+    color: whitesmoke;
+  font-weight:700;
+ 
+  border-radius: 10px;
+  padding: 30px;
+}
+.vs-color{
+    background-color: #f8f8f8;
+    padding: 50px;
+}
+.card{
+    
+    border-radius: 10px;  
+   
+
+
+}
+.uk-dotnav>.uk-active>* {
+    background-color: rgb(40 99 244 / 60%);
+    border-color: transparent;
+}
+.size{
+    font-size: 16px !important;
+    color: whitesmoke !important;
+     font-weight:700;
+}
+ :host {
+    
+    white-space: none;
+}
+.cs-marquee{
+    white-space:unset !important;
+    padding: 10px;
+
+
+}
+.uk-overlay-primary {
+    background: rgb(34 34 34 / 68%);
+    border-radius: 25px !important;
+    
+   
+}
+.cs-font{
+    font-weight: 500; 
+   background-size: cover; 
+
+}
+.align{
+    align-self: center;
+}
+.inside-cs {
+    color: rgb(26, 138, 207) !important;
+
+}
+.rs-color{
+    background-color: #f4f4f4;
+    padding-bottom: 30px;
+}
+.take{
+    padding: 12px 23px;
+}
+.cs-button{
+    border-radius: 25px;
+    background-color: rgb(49, 172, 255);
+    color: whitesmoke;
+    
+    }
+    .track{
+        width: 200px;
+    }
+
+    .cs-image img{
+        width: 125px !important;
+        height: 105px !important;
+        object-fit: contain;
+        object-position: center;
+    }
+    .top{
+        padding-bottom: 10px;
+}
+.input{
+    border: 1px solid #999c;
+    height: 45px;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 300;
+    width: 550px;
+    border-radius: 50px;
+    font-family: var(--default-font-family);
+    padding-right: 180px;
+    padding-left: 35px;
+}
+    .submit{
+        height: 45px;
+    
+  
+    border-radius: 50px;
+    
+    width: 180px !important;
+    
+    color:white !important;
+   
+    background: linear-gradient(0deg, rgba(24,157,216,1) 0%, rgba(60,191,249,1) 100%) !important;
+    transform: translate(-180px, 0px);
+    }
+    .cs-list a:hover{
+        color:rgb(9, 132, 209)
+    }
+  
+  .cs-list a{
+     text-decoration: none;
+      color: #87868c !important;
+      
+    
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: normal;
+  }
+  .us-clr{
+    color: #87868c !important;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .cs-pad{
+    padding-left: 24px !important;
+  }
+  .cs-list{
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 300;
+  }
+  .ps-color{
+    background-color: #f8f8f8;
+    padding: 17px;
+
+  }
+  
+  .ds-slider-overlay-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background: linear-gradient(to top, rgb(0 0 0 / 6%), rgb(255 255 255 / 0%), rgb(255 255 255 / 0%), rgb(255 255 255 / 0%),rgb(0 0 0 / 60%));
+}
+.slide img{width: 100%;
+    height: 82vh;
+    object-fit: cover;}
+   .cs-large {
+      line-height: 1 !important;
+    color: #fff !important;   
+    text-transform: capitalize;
+    margin-bottom: 10px !important;
+    text-align: left;
+    font-family: "SFProtext";
+    text-shadow: 5px 6px 10px #000;
+    max-height: 220px;
+    max-width: 950px;
+    font-size: 4.6rem !important;
+      font-weight: 500;
+      color: whitesmoke;
+      margin-left: 10%;
+     
+    }
+    
+
+   
+
+
+</style>
+    
+
+</head>
+<body>
+
+  
+    <div class="uk-position-relative ">
+        
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+
+            <ul class="uk-slideshow-items ds-slider-overlay-bg">
+                <li class="slide">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/home/HeaderSlider-img2.jpg" alt="" uk-cover>
+                    
+                    
+                    <div class="uk-position-bottom uk-position-small uk-text-left uk-light ">
+                        <h2 class="cs-large">  Your
+                            Full Service
+                            Marketing<br>
+                            Specialists </h2>                        
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/home/HeaderSlider-img4.jpg" alt="" uk-cover>
+                    <div class="uk-position-bottom uk-position-small uk-text-left uk-light ">
+                        <h2 class="cs-large"> Heavy
+                            on Quality.<br>
+                            Light On
+                            Price. <br> Editorial
+                            Style Photos</h2>                       
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/home/HeaderSlider-img6.jpg" alt="" uk-cover>
+                    <div class="uk-position-bottom uk-position-small uk-text-left uk-light ">
+                        <h2 class="cs-large">  Interior
+                            Design Style
+                            Photography</h2>                      
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/home/HeaderSlider-img5.jpg" alt="" uk-cover>
+                    <div class="uk-position-bottom uk-position-small uk-text-left uk-light ">
+                        <h2 class="cs-large">
+                            Better Photos. <br>
+                            Better Service.<br>
+                            Guaranteed</h2>                     
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/home/HeaderSlider-img7.jpg" alt="" uk-cover>
+                    <div class="uk-position-bottom uk-position-small uk-text-left uk-light ">
+                        <h2 class="cs-large">  
+                            Better Photos. <br>
+                            Better Service.<br>
+                            Guaranteed</h2>                      
+                    </div>
+                </li>
+                
+            </ul>
+        
+            <div class="uk-light">
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+        
+        </div>
+        <div class="uk-position-top uk-container sight">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <img src="dark_logo.png" width="170px">
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Order</a></li> 
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Help center</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="uk-width1-1">
+            <div class="uk-margin-top">
+                <ul class="uk-subnav  bottom" uk-switcher>
+                    <li class="uk-text-bold"><a href="#">Seattle, WA</a></li>
+                    <li class="uk-text-bold"> <a href="#">Portland, OR</a></li>
+                    <li class="uk-text-bold"><a href="#">Austin, TX</a></li>
+                </ul>
+            </div>
+            <div class="uk-align-center  uk-container-small">
+              
+                <div class=" uk-text-center uk-margin-large-top">
+                    <h1 class="uk-margin-small-bottom cs-color">World Class Expertise | Local Touch</h1>
+                    <p class="uk-margin-small as-color">Ruum Media is full service and full quality. We produce only the best in photography, video, print, 3D, aerial, property websites, and social media assets. Ruum operates with a level of performance and dependability that no other creative firm in the real estate or architecture space can touch. Co-creative marketing planning, full-time dedicated project management, and streamlined user interface provide timely results appropriate for properties at nearly any price point.</p>
+                </div>
+               
+
+            </div>
+            <div class="uk-align-center  uk-container-small">
+              
+                <div class=" uk-text-center uk-margin-large-top">
+                    <h1 class="uk-margin-small-bottom cs-color">Our Work Speaks for Itself</h1>
+                    <div class="uk-grid justify">
+                        <div>
+                            <a href="#" class="uk-margin-small "> learn more > </a>
+                          
+                        </div>
+                        <div>                                                       
+                                <a href="#" class="uk-margin-small"> Order > </a>
+
+                        </div>
+
+
+                    </div>
+                   
+                    
+                </div>
+
+            </div>
+            <div class="uk-container uk-container-xlarge"  >
+                <div>
+
+                <div class="uk-position-relative  uk-visible-toggle uk-light" tabindex="-1" uk-slider>  
+                    <div class="uk-text-right">
+                        <a class="" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+                    </div>                                                                                              
+                            <ul class="uk-slider-items   uk-child-width-1-2@s  uk-child-width-1-4@l "uk-grid uk-grid-small >
+                          
+                                <li >
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg " ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img2.jpg" ><img  src="WorkSpeaks-img2.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img3.jpg" ><img  src="WorkSpeaks-img3.jpg" ></a>
+                                    </div>
+                                   
+                                </li>
+                                <li >
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img4.jpg " ><img  src="WorkSpeaks-img4.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img5.jpg" ><img  src="WorkSpeaks-img5.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img6.jpg" ><img  src="WorkSpeaks-img6.jpg" ></a>
+                                    </div>
+                                   
+                                </li>
+                                <li >
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img7.jpg " ><img  src="WorkSpeaks-img7.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img8.jpg" ><img  src="WorkSpeaks-img8.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img10.jpg" ><img  src="WorkSpeaks-img10.jpg" ></a>
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img11.jpg " ><img  src="WorkSpeaks-img11.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img5.jpg" ><img  src="WorkSpeaks-img5.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg" ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg " ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg" ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg" ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg " ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg" ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                    <div class="uk-card pad  uk-card-body uk-margin-small-top">
+                                        <a href="WorkSpeaks-img1.jpg" ><img  src="WorkSpeaks-img1.jpg" ></a>
+                                    </div>
+                                    
+                                </li>
+                               
+                            </ul>
+                           
+
+                        </div>
+        
+              
+                    </div>
+
+                </div>
+             
+        </div>    
+                
+
+    </div>
+    <div>
+        <div class="uk-margin-large-top">
+            <div class="uk-text-center">
+                <h1 class="uk-text-bold">Why Choose Ruum Media?</h1>
+    
+            </div>
+        </div>
+
+       
+    </div>
+    <div>
+        <marquee class="cs-marquee">
+            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card  uk-card-default cs-bg uk-card-body uk-text-center">
+                        <h3 class="uk-card-title size ">Quality - The ultimate imagery for discerning agents who refuse to settle for “good enough”.</h3>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card  uk-card-default cs-bg uk-card-body">
+                        <h3 class="uk-card-title size">Quality - The ultimate imagery for discerning agents who refuse to settle for “good enough”.</h3>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card  uk-card-default cs-bg  uk-card-body">
+                        <h3 class="uk-card-title size ">Quality - The ultimate imagery for discerning agents who refuse to settle for “good enough”.</h3>
+                        
+                    </div>
+                </div>
+            </div>
+          
+        </marquee>  
+       
+
+    </div>
+    <div class=" vs-color uk-margin-large-top">
+        <div class="uk-align-center uk-margin-large-top  uk-container-small">
+              
+            <div class=" uk-text-center ">
+                <div class="bs-padding" >
+                    <h1 class="uk-margin-small-bottom cs-color">Oh. So. Pro. Video.</h1>
+                     <p class="uk-text-bold">Our videos range from budget friendly to more polished presentations that help agents give their brand a much needed boost. Imagine what your next listing presentation will look like!</p>
+
+                </div>
+                
+                <div class="uk-grid justify">
+                    <div>
+                        <a href="#" class="uk-margin-small "> learn more > </a>
+                      
+                    </div>
+                    <div>                                                       
+                            <a href="#" class="uk-margin-small"> Order > </a>
+    
+                    </div>
+    
+    
+                </div>
+               
+                
+            </div>
+    
+        </div>
+        <div  class="uk-container">
+            <div class="uk-child-width-1-2@s uk-grid-match uk-container" uk-grid>
+                <div>
+                    <div class="uk-card">
+                       
+    
+                        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-responsive ="automute: true"></iframe>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card">
+                      
+    
+                        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-responsive ="automute: true"></iframe>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card ">
+                       
+    
+                        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-responsive ="automute: true"></iframe>
+    
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card ">
+                        
+    
+                    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-responsive ="automute: true"></iframe>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+       
+    </div>
+    <div class="  uk-margin-large-top">
+        <div class="uk-align-center uk-margin-large-top  uk-container-small">
+              
+            <div class=" uk-text-center ">
+                <div class="bs-padding" >
+                    <h1 class="uk-margin-small-bottom cs-color">Be one of the 1,500+ agents and companies
+                        who have partnered with Ruum Media to build their brand..</h1>
+                     
+
+                </div>
+            </div>
+            
+                
+        </div>
+        <div uk-slider>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+
+            <ul class="uk-slider-items uk-grid">
+                <li class="uk-width-1-3@m">
+                    <div class="uk-card card uk-card-primary uk-text-center uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right border uk-cover-container">
+                            <img src="http://ogoits.s3.amazonaws.com/ruum/Testimonial-img/Cole-Robenson.jpg" alt=""  uk-cover>
+                            <canvas width="400" height="300"></canvas>
+                        </div>
+                        <div >
+                            <div class="uk-card-body uk-text-center ">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p class="uk-text-center">  ...Their pictures are high quality, angles are fantastic, and support is second to none. As a real estate agent, I rely on my photographer to provide me the best possible product for marketing and Ruummedia never disappoints....
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-1-3@m">
+                    <div class="uk-card card uk-card-primary uk-text-center uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right border uk-cover-container">
+                            <img src="http://ogoits.s3.amazonaws.com/ruum/Testimonial-img/Christina-and-Matt-Skally.jpg" alt=""  uk-cover>
+                            <canvas width="400" height="300"></canvas>
+                        </div>
+                        <div >
+                            <div class="uk-card-body uk-text-center ">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p class="uk-text-center">  ...Their pictures are high quality, angles are fantastic, and support is second to none. As a real estate agent, I rely on my photographer to provide me the best possible product for marketing and Ruummedia never disappoints....
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-1-3@m">
+                    <div class="uk-card card uk-card-primary uk-text-center uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right border uk-cover-container">
+                            <img src="http://ogoits.s3.amazonaws.com/ruum/Testimonial-img/Kelly-Morse.jpg" alt=""  uk-cover>
+                            <canvas width="400" height="300"></canvas>
+                        </div>
+                        <div >
+                            <div class="uk-card-body uk-text-center ">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p class="uk-text-center">  ...Their pictures are high quality, angles are fantastic, and support is second to none. As a real estate agent, I rely on my photographer to provide me the best possible product for marketing and Ruummedia never disappoints....
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-1-3@m">
+                    <div class="uk-card card uk-card-primary uk-text-center uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right border uk-cover-container">
+                            <img src="http://ogoits.s3.amazonaws.com/ruum/Testimonial-img/Cole-Robenson.jpg" alt=""  uk-cover>
+                            <canvas width="400" height="300"></canvas>
+                        </div>
+                        <div >
+                            <div class="uk-card-body uk-text-center ">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p class="uk-text-center">...Their pictures are high quality, angles are fantastic, and support is second to none. As a real estate agent, I rely on my photographer to provide me the best possible product for marketing and Ruummedia never disappoints....
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+               
+                <li class="uk-width-1-3@m">
+                    <div class="uk-card card uk-card-primary uk-text-center uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right border uk-cover-container">
+                            <img src="http://ogoits.s3.amazonaws.com/ruum/Testimonial-img/Cole-Robenson.jpg" alt=""  uk-cover>
+                            <canvas width="400" height="300"></canvas>
+                        </div>
+                        <div >
+                            <div class="uk-card-body uk-text-center ">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p class="uk-text-center">  ...Their pictures are high quality, angles are fantastic, and support is second to none. As a real estate agent, I rely on my photographer to provide me the best possible product for marketing and Ruummedia never disappoints....
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="uk-width-1-3@m">
+                    <div class="uk-card card uk-card-primary uk-text-center uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-flex-last@s uk-card-media-right border uk-cover-container">
+                            <img src=" http://ogoits.s3.amazonaws.com/ruum/Testimonial-img/Kathy-MacNaughton.jpg" alt=""  uk-cover>
+                            <canvas width="400" height="300"></canvas>
+                        </div>
+                        <div >
+                            <div class="uk-card-body uk-text-center ">
+                                <h3 class="uk-card-title">Media Right</h3>
+                                <p class="uk-text-center">  ...Their pictures are high quality, angles are fantastic, and support is second to none. As a real estate agent, I rely on my photographer to provide me the best possible product for marketing and Ruummedia never disappoints....
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+        <ul class="uk-slider-nav uk-dotnav  uk-flex-center uk-margin"></ul>
+    </div>
+           
+       
+    </div>
+    <div class=" vs-color uk-margin-large-top">
+        <div class="uk-align-center uk-margin-large-top  uk-container">
+              
+            <div class=" uk-text-center ">
+                <div class="bs-padding" >
+                    <h1 class="uk-margin-small-bottom cs-color">Your Marketing Team – Extended</h1>
+                     <p class="uk-text-bold">Ruum works with over 1,000 top shelf agents, leveraging their own strengths to elevate their brand. Co-creative marketing planning is at the heart of our collaborative approach. Industry leading wizards in media production, along with project management experts, combine forces to create the perfect recipe for success – your success.</p>
+
+                </div>
+            </div>
+            <div class="uk-child-width-1-3@m uk-grid-medium as-width uk-grid-match" uk-grid>
+                <div>
+                   
+                    <div>
+                        <div class="uk-background-cover   cs-font uk-height-large uk-panel cs-image uk-card uk-card-default uk-card-body" style="background-image: url(https://ogoits.s3.amazonaws.com/ruum/Marketing-team/Project-Management.jpg);    border-radius: 25px !important;">
+                            <div class="uk-overlay-primary uk-position-cover"></div>
+                            <p class="uk-overlay uk-position-bottom uk-light">Our team always has your back. Full time project managers and admin specialists are always in the office to support the Ruum Media team and each one of our clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bs-width">
+                    <div>
+                        <div class="uk-background-cover  cs-font uk-height-large uk-panel cs-image uk-card uk-card-default uk-card-body" style="background-image: url(https://ogoits.s3.amazonaws.com/ruum/Marketing-team/agent-area.jpg);    border-radius: 25px !important;">
+                            <div class="uk-overlay-primary uk-position-cover"></div>
+                            <p class="uk-overlay uk-position-bottom uk-light">Use our streamlined client interface, custom designed and agent tested, to order and track your marketing campaign.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bs-width">
+                    <div>
+                        <div class="uk-background-cover  cs-font uk-height-large uk-panel cs-image uk-card uk-card-default uk-card-body" style="background-image: url(https://ogoits.s3.amazonaws.com/ruum/Marketing-team/On-site-Team.jpg);     border-radius: 25px !important;">
+                            <div class="uk-overlay-primary uk-position-cover"></div>
+                            <p class="uk-overlay uk-position-bottom uk-light">Only meticulously vetted photographers and editors are selected to join the Ruum Media team, where they employ our proprietary compositional and editing techniques rooted in luxury resort imaging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+    <div class="uk-container uk-margin-large-top">
+
+        <div>
+            <div class="uk-text-center" uk-grid>
+                <div class="uk-width-1-2@m align">
+                    <div class="uk-card uk-card-body ">
+                        <h1 class="uk-text-bold">Designer Inspired
+                            Property Websites</h1>
+                        <p class="uk-text-bold uk-text-large" >Included with all photography.
+
+                            Personalize your favorite template.</p>
+                            <div class="uk-grid justify">
+                                <div>
+                                    <a href="#" class="uk-margin-small "> learn more > </a>
+                                  
+                                </div>
+                                <div>                                                       
+                                        <a href="#" class="uk-margin-small"> Order > </a>
+                
+                                </div>
+                
+                
+                            </div>
+                    </div>
+                </div>
+              
+                <div class="uk-width-expand@m">
+                    <div class="uk-card uk-card-body">
+                        <img src="http://ogoits.s3.amazonaws.com/ruum/Website-mockup/Website-Mockup.png">
+                    </div>
+                </div>
+            </div>
+           
+           
+            
+        </div>
+        
+        </div>
+
+    </div>
+    <div class="vs-color">
+
+    <div class="uk-container uk-margin-large-top ">
+        
+
+        <div >
+            <div class="uk-text-center" uk-grid>
+                <div class="uk-width-expand@m ">
+                    <div class="uk-card uk-card-body ">
+                        <img src="https://ogoits.s3.amazonaws.com/ruum/3d/3D.png">
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m align">
+                    <div class="uk-card uk-card-body ">
+                        <h1 class="uk-text-bold">The Power of 3D</h1>
+                        <h3 class="uk-text-bold">Let potential buyers tour your property from the comfort of home.</h3>
+                        <p class="uk-text-default" >Matterport 3D is already increasing booking in the travel industry. Real estate agents are also enjoying winning more listing from out of state buyers with this amazing technology.</p>
+                        <div class="uk-grid justify">
+                            <div>
+                                <a href="#" class="uk-margin-small "> learn more > </a>
+                              
+                            </div>
+                            <div>                                                       
+                                    <a href="#" class="uk-margin-small"> Order > </a>
+            
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+              
+               
+                
+            </div>
+           
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="uk-container">
+    <div class="uk-container-small uk-align-center">
+        <div class="uk-card uk-card-body uk-text-center">
+            <h1 class="uk-text-bold">Do More With Your Media</h1>
+            <p class="uk-text-bold uk-text-large" >Choose the types of marketing materials you need to succeed
+                and have our team to do the work for you.</p>
+        </div>
+
+    </div>
+    <div class="uk-card-default uk-card">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+            <div class="uk-text-right">
+                <a class="" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+            </div>
+
+
+            <ul class="uk-slider-items uk-grid">
+                <li class="uk-width-3-4">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body">
+                                <h2 class="uk-card-title uk-text-bold">Fine Art Books</h2>
+                                <p class="uk-text-large">Marketing magazines that makes your listing shine. </p>
+                                <div class="uk-grid ">
+                                    <div>
+                                        <a href="#" class="uk-margin-small inside-cs  "> learn more > </a>
+                                      
+                                    </div>
+                                    <div>                                                       
+                                            <a href="#" class="uk-margin-small inside-cs "> Order > </a>
+                    
+                                    </div>
+                    
+                    
+                                </div>
+                               
+                                
+    
+                            </div>
+                            <div class="uk-card-media-bottom">
+                                <iframe src="http://ogoits.s3.amazonaws.com/ruum/More-with-media/video/Fine-art-book.mp4" width="1920" height="1080" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body">
+                                <h2 class="uk-card-title uk-text-bold">Fine Art Books</h2>
+                                <p class="uk-text-large">Marketing magazines that makes your listing shine. </p>
+                                <div class="uk-grid ">
+                                    <div>
+                                        <a href="#" class="uk-margin-small inside-cs  "> learn more > </a>
+                                      
+                                    </div>
+                                    <div>                                                       
+                                            <a href="#" class="uk-margin-small inside-cs "> Order > </a>
+                    
+                                    </div>
+                    
+                    
+                                </div>
+                               
+                                
+    
+                            </div>
+                            <div class="uk-card-media-bottom">
+                                <iframe src="http://ogoits.s3.amazonaws.com/ruum/More-with-media/video/Fine-art-book.mp4" width="1920" height="1080" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body">
+                                <h2 class="uk-card-title uk-text-bold">Fine Art Books</h2>
+                                <p class="uk-text-large">Marketing magazines that makes your listing shine. </p>
+                                <div class="uk-grid ">
+                                    <div>
+                                        <a href="#" class="uk-margin-small inside-cs  "> learn more > </a>
+                                      
+                                    </div>
+                                    <div>                                                       
+                                            <a href="#" class="uk-margin-small inside-cs "> Order > </a>
+                    
+                                    </div>
+                    
+                    
+                                </div>
+                               
+                                
+    
+                            </div>
+                            <div class="uk-card-media-bottom">
+                                <iframe src="http://ogoits.s3.amazonaws.com/ruum/More-with-media/video/Fine-art-book.mp4" width="1920" height="1080" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body">
+                                <h2 class="uk-card-title uk-text-bold">Fine Art Books</h2>
+                                <p class="uk-text-large">Marketing magazines that makes your listing shine. </p>
+                                <div class="uk-grid ">
+                                    <div>
+                                        <a href="#" class="uk-margin-small inside-cs  "> learn more > </a>
+                                      
+                                    </div>
+                                    <div>                                                       
+                                            <a href="#" class="uk-margin-small inside-cs "> Order > </a>
+                    
+                                    </div>
+                    
+                    
+                                </div>
+                               
+                                
+    
+                            </div>
+                            <div class="uk-card-media-bottom">
+                                <iframe src="http://ogoits.s3.amazonaws.com/ruum/More-with-media/video/Fine-art-book.mp4" width="1920" height="1080" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body">
+                                <h2 class="uk-card-title uk-text-bold">Fine Art Books</h2>
+                                <p class="uk-text-large">Marketing magazines that makes your listing shine. </p>
+                                <div class="uk-grid ">
+                                    <div>
+                                        <a href="#" class="uk-margin-small inside-cs  "> learn more > </a>
+                                      
+                                    </div>
+                                    <div>                                                       
+                                            <a href="#" class="uk-margin-small inside-cs "> Order > </a>
+                    
+                                    </div>
+                    
+                    
+                                </div>
+                               
+                                
+    
+                            </div>
+                            <div class="uk-card-media-bottom">
+                                <iframe src="http://ogoits.s3.amazonaws.com/ruum/More-with-media/video/Fine-art-book.mp4" width="1920" height="1080" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+           
+        
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="rs-color">
+    <div class="uk-container uk-margin-top ">
+        <div class="uk-text-center uk-margin-large-top">
+            <div class="uk-card uk-card-body ">
+                <h1 class="uk-text-bold">Let's Hang Out On The Gram!</h1>
+              </div>
+    
+        </div>
+        <!-- <img src="WorkSpeaks-img27 (1).jpg"> -->
+        
+    
+    </div>
+    <div class="uk-container-large uk-align-center" >
+        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card  uk-card-body take">
+                    <img src="WorkSpeaks-img27 (1).jpg">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-body take">
+                    <img src="WorkSpeaks-img29.jpg">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card  uk-card-body take">
+                    <img src="WorkSpeaks-img21.jpg">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-body take">
+                    <img src="WorkSpeaks-img31.jpg">
+                </div>
+            </div>
+        </div>
+        
+        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-body take">
+                    <img src="WorkSpeaks-img6.jpg">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card  uk-card-body take">
+                    <img src="WorkSpeaks-img16.jpg">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card  uk-card-body take">
+                    <img src="WorkSpeaks-img26.jpg">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card  uk-card-body take">
+                    <img src="WorkSpeaks-img25.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="uk-text-center uk-margin-top as-btn ">
+            <button class="uk-button uk-button-primary cs-button">
+                FOLLOW US ON INSTAGRAM
+            </button>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="uk-margin-large-top top uk-container">
+    <div class="uk-position-relative uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-4 uk-child-width-1-6@m uk-grid-small uk-grid">
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/ELEETESTANDARD-original.png" >
+                    
+                </div>
+            </li>
+            <li>
+                
+                <div class="uk-panel cs-image ">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/CompassReal-Estate-original.png" >
+            
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/Cascade-original.png" >
+                   
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/BainLogo-original.png"  >
+                    
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/AirbnbLogo-original.png" >
+                  
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/HassonCompany-original.png"  >
+                  
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/JohnlScottReal-estate-original.png"  >
+                  
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/WindermereReal-estate-original.png"  >
+                  
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/RszExp-original.png"  >
+                  
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel cs-image">
+                    <img src="https://ogoits.s3.amazonaws.com/ruum/Gray-logotypes/Light/Inhabit-original.png"  >
+                  
+                </div>
+            </li>
+           
+           
+        </ul>
+    
+      
+    </div>
+</div>
+<div class="uk-container">
+    <div class="uk-text-center uk-margin-large-top">
+        <div class="uk-card uk-card-body ">
+            <h1 class="uk-text-bold">Get Our Service Updates And Special Offers!</h1>
+          </div>
+
+    </div>
+    <div class="uk-text-center">
+        <form>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium input uk-position-relative" type="text" placeholder="Email Address" > <button class=" uk-position-absolute uk-button uk-button-primary submit uk-text-center">Subscribe</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="ps-color uk-margin-top">
+    <div>
+        <div class="uk-container-xlarge uk-align-center">
+            <div class=" uk-child-width-expand@s" uk-grid>
+                <div>
+                   <label><img src="cropped_logo.png" width="150px" height="150px"></label>
+                    <ul class="uk-list cs-list ">
+                      
+                        <li>Have questions or want to give us some feedback?</li>
+                        <li>We would love to hear from you!</li>
+                        <li>Drop us a line at info@ruummedia.com</li>
+                        <li>Phone: 503-997-0737</li>
+                    </ul>
+                </div>
+                <div>
+                    <label class="uk-text-bold us-clr">SERVICES</label>
+                     <ul class="uk-list cs-list">
+                    
+                    <li><a href="#">Real Estate Photography</a></li>
+                    <li> <a href="#"> Twilight Photography</a></li>
+                    <li>  <a href="#">Aerial Photography</a></li>
+                    <li>  <a href="#">HD Films</a></li>
+                    <li>  <a href="#">Single Page Websites</a></li>
+                    <li>  <a href="#">Interactive 3D Tours</a></li>
+                    <li>  <a href="#">Print and Web Marketting Services</a></li>
+                </ul></div>
+                <div>
+                    <label class="uk-text-bold us-clr">USEFUL LINKS</label>
+                    <ul class="uk-list cs-list">
+                       
+                      
+                        <li>  <a href="#">My Account</a></li>
+                        <li> <a href="#">Sign Up</a></li>
+                        <li> <a href="#">Order</a></li>
+                        <li> <a href="#">Testimonials</a></li>
+                        <li> <a href="#">Our Team</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li> <a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <label class="uk-text-bold us-clr">LEGAL</label>
+                    <ul class="uk-list cs-list">
+                       
+                        <li> <a href="#">Terms & Conditions</a></li>
+                        <li> <a href="#">Privacy Policy</a></li>
+                        <li> <a href="#">Contact Us</a></li>
+                       
+                    </ul>
+    
+                    <h5 class="uk-text-bold uk-margin-medium-top " style="color:    #87868c !important;">Follow us</h5>
+    
+                    <div class="uk-grid ">
+                        <a class="cs-pad" href="" uk-icon="icon:facebook"></a>
+                        <a  class="cs-pad" href="" uk-icon="icon:instagram"></a>
+                        <a  class="cs-pad" href="" uk-icon="icon:vimeo"></a>
+                       
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+
+    </div>
+    <hr>
+    <div class="  us-clr uk-text-center">
+        <p>© 2022 Powered by Ruum Media. All rights reserved.</p>
+    </div>
+   
+  
+   
+</div>
+
+
+
+
+  
+    
+   
+    
+    
+  
+    
+        
+   
+   
+   
+  
+</body>
+</html>
